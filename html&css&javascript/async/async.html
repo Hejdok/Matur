@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+        const api = "https://catfact.ninja/fact"
+
+        async function fetchData(api) {
+            try {
+                const response = await fetch(api)
+
+                if (!response.ok) {
+                    throw Error("Something ain't right")
+                }
+                
+                return await response.json()
+            } catch (error) {
+                console.log("Error", error)
+            }
+        }
+
+        async function showData() {
+            
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+.header {
+    color: black;
+}
+
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn {
+    background-color: rgb(90, 2, 255);
+    height: 50px;
+    aspect-ratio: 1/5;
+    border: none;
+    border-radius: 25000px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn:hover {
+    background-color: rgb(207, 158, 229);
+}
+
+#icon {
+    color: azure;
+    margin-right: 10px;
+    height: 20px;
+}
+
+.bg-black {
+    background-color: black;
+}
+    </style>
+</head>
+<body>
+    <h1 class="header">Nadpis</h1>
+    <button class="btn"><img id="icon" src="circle-check-svgrepo-com.svg" alt="">regime</button>
+    <button class="btn" id="btn2"><img id="icon" src="circle-check-svgrepo-com.svg" alt="">background</button>
+
+
+
+
+
+
+    <script>
+        console.log("Unfreeze!")
+        for(let i=1; i<6; i++){
+            console.log(i)
+        }
+
+        for (let i = 1; i < 6; i++) {
+            console.log(i + ". Hi")
+        }
+
+        const btn = document.querySelector(".btn")
+        const header = document.querySelector(".header")
+        const btn2 = document.querySelector("#btn2")
+        const body = document.querySelector("body")
+
+        btn.addEventListener("click", function () {
+            header.style.color = "red"
+            header.style.fontSize = "100px"
+        })
+
+        btn2.addEventListener("click", function () {
+            body.classList.toggle("bg-black")
+        })
+
+    </script>
+</body>
+</html>
